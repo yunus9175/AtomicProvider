@@ -1,17 +1,7 @@
-import React, { ReactNode, ComponentType } from 'react';
+import React from 'react';
 
-// A provider can be passed either as:
-// - a React component, or
-// - a tuple of [component, props] when that provider needs configuration.
-type ProviderEntry = [ComponentType<any>, Record<string, any>] | ComponentType<any>;
-
-interface AtomicProps {
-  // Providers are applied from left to right in the array, but rendered
-  // from the inside out so each one wraps the next.
-  providers: ProviderEntry[];
-  // The app or subtree that should be nested inside the provider stack.
-  children: ReactNode;
-}
+import type { AtomicProps } from './types';
+export type { AtomicProps, ProviderEntry } from './types';
 
 export const AtomicProvider = ({ providers, children }: AtomicProps) => {
   // Build the provider tree by walking the list from the end to the start.
