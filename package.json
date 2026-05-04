@@ -1,6 +1,6 @@
 {
   "name": "atomicprovider",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight wrapper to flatten React and Next.js provider nesting.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
