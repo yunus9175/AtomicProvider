@@ -1,6 +1,6 @@
 {
   "name": "atomicprovider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight wrapper to flatten React and Next.js provider nesting.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
     "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
-    "lint": "tsc",
+    "lint": "tsc --noEmit",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint && npm run build"
   },
