@@ -1,6 +1,6 @@
 {
   "name": "atomicprovider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight wrapper to flatten React and Next.js provider nesting.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,12 +10,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com"
+    "url": "https://github.com/yunus9175/AtomicProvider"
   },
   "bugs": {
-    "url": "https://github.com"
+    "url": "https://github.com/yunus9175/AtomicProvider/issues"
   },
-  "homepage": "https://github.com",
+  "homepage": "https://github.com/yunus9175/AtomicProvider",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
     "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
