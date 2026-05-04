@@ -8,10 +8,20 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com"
+  },
+  "bugs": {
+    "url": "https://github.com"
+  },
+  "homepage": "https://github.com",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
     "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
-    "lint": "tsc"
+    "lint": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
     "react",
@@ -21,7 +31,7 @@
     "context",
     "redux"
   ],
-  "author": "",
+  "author": "Mohammad Yunus",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^19.0.0",
@@ -31,5 +41,8 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "atomicprovider": "github:yunus9175/AtomicProvider"
   }
 }
