@@ -118,6 +118,8 @@ npm run dev
 
 Starts `tsup` in watch mode and rebuilds on changes.
 
+This README includes a small test change for a pull request workflow check.
+
 ```bash
 npm run build
 ```
